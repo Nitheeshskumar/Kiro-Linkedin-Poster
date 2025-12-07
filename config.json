@@ -1,0 +1,30 @@
+{
+  "aiKeywords": [
+    "artificial intelligence news",
+    "machine learning breakthrough", 
+    "AI startup funding",
+    "OpenAI ChatGPT updates",
+    "AI regulation policy",
+    "neural network research",
+    "AI tool launches",
+    "machine learning research",
+    "AI ethics",
+    "generative AI",
+    "large language models",
+    "computer vision",
+    "natural language processing",
+    "AI safety",
+    "autonomous vehicles AI"
+  ],
+  "searchSettings": {
+    "maxResults": 10,
+    "timeframe": "d",
+    "minRelevanceScore": 0.6
+  },
+  "postSettings": {
+    "maxCharacters": 3000,
+    "optimalCharacters": 1600,
+    "maxHashtags": 5,
+    "defaultStyle": "news_share"
+  }
+}

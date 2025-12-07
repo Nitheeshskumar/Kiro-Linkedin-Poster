@@ -1,0 +1,10 @@
+{
+  "id": "linkedin-ai-news-agent",
+  "name": "Generate AI News Posts",
+  "description": "Automatically discovers AI-related news and generates LinkedIn posts",
+  "trigger": "manual",
+  "command": "node linkedin-ai-news-agent.js",
+  "category": "Content Generation",
+  "icon": "📰",
+  "enabled": true
+}

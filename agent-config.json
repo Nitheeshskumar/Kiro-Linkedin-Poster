@@ -1,0 +1,48 @@
+{
+  "aiKeywords": [
+    "artificial intelligence",
+    "machine learning",
+    "OpenAI",
+    "ChatGPT",
+    "neural networks",
+    "deep learning",
+    "AI startups",
+    "generative AI",
+    "AI ethics",
+    "AI regulation"
+  ],
+  "search": {
+    "maxResults": 10,
+    "timeframe": "d",
+    "minRelevanceScore": 0.4,
+    "requestTimeout": 15000,
+    "rateLimitDelay": 1000
+  },
+  "posts": {
+    "maxCharacters": 3000,
+    "optimalCharacters": 1600,
+    "maxHashtags": 5,
+    "styles": ["news_share", "question", "insight", "list"],
+    "defaultStyle": "news_share"
+  },
+  "sources": {
+    "preferred": [
+      "techcrunch.com",
+      "wired.com",
+      "technologyreview.com",
+      "venturebeat.com",
+      "theverge.com",
+      "arstechnica.com"
+    ],
+    "excluded": [
+      "spam-site.com",
+      "clickbait-news.com"
+    ]
+  },
+  "userPreferences": {
+    "focusAreas": ["general AI", "machine learning", "AI ethics"],
+    "postTone": "professional",
+    "includePersonalOpinions": false,
+    "maxPostsPerRun": 3
+  }
+}

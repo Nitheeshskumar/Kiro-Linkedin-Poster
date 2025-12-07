@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Good News Aggregator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <h3>About</h3>
+                <p>This agent searches for positive AI developments from the last 24 hours, filters out seen stories, and generates a LinkedIn post using Gemini 2.0 Flash.</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="header">
+                <div class="logo">
+                    <span class="logo-icon">🤖</span>
+                    <h1>AI Good News Aggregator</h1>
+                </div>
+                <p class="subtitle">Your daily dose of optimism in Artificial Intelligence</p>
+            </div>
+
+            <div class="action-section">
+                <button id="generateBtn" class="generate-btn">
+                    Generate Briefing
+                </button>
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <div class="loading-content">
+                    <div class="spinner"></div>
+                    <p>Searching for positive AI news...</p>
+                    <div class="progress-steps">
+                        <div class="step" id="step1">🔍 Searching news sources</div>
+                        <div class="step" id="step2">🤖 Analyzing with Gemini</div>
+                        <div class="step" id="step3">✍️ Generating LinkedIn post</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <div class="briefing-header">
+                    <h2>📰 Today's AI Good News Briefing</h2>
+                    <div class="briefing-meta" id="briefingMeta"></div>
+                </div>
+                
+                <div class="news-articles" id="newsArticles"></div>
+                
+                <div class="linkedin-post-section">
+                    <h3>📝 Generated LinkedIn Post</h3>
+                    <div class="post-container">
+                        <textarea id="linkedinPost" class="linkedin-textarea" placeholder="Your LinkedIn post will appear here..."></textarea>
+                        <div class="post-actions">
+                            <button id="copyBtn" class="copy-btn">📋 Copy to Clipboard</button>
+                            <button id="regenerateBtn" class="regenerate-btn">🔄 Regenerate Post</button>
+                            <div class="char-count" id="charCount">0 characters</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="error-section" id="errorSection" style="display: none;">
+                <div class="error-content">
+                    <h3>❌ Something went wrong</h3>
+                    <p id="errorMessage"></p>
+                    <button id="retryBtn" class="retry-btn">Try Again</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

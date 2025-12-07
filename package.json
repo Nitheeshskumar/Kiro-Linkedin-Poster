@@ -1,0 +1,24 @@
+{
+  "name": "linkedin-ai-news-agent-ui",
+  "version": "1.0.0",
+  "description": "Web UI for LinkedIn AI News Agent",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "agent": "node linkedin-ai-news-agent.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1"
+  },
+  "keywords": [
+    "linkedin",
+    "ai",
+    "news",
+    "social-media",
+    "automation"
+  ],
+  "author": "Kiro AI Assistant",
+  "license": "MIT"
+}

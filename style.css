@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f7fa;
+    min-height: 100vh;
+    color: #333;
+}
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background: #e8f0fe;
+    padding: 20px;
+    border-right: 1px solid #dadce0;
+}
+
+.sidebar-content h3 {
+    color: #1a73e8;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.sidebar-content p {
+    color: #5f6368;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    color: #202124;
+    font-weight: 400;
+}
+
+.subtitle {
+    color: #5f6368;
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+.action-section {
+    margin-bottom: 40px;
+}
+
+.generate-btn {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.generate-btn:hover {
+    background: #1557b0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.generate-btn:disabled {
+    background: #dadce0;
+    color: #9aa0a6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+}
+
+.loading-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #f3f4f6;
+    border-top: 3px solid #1a73e8;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.progress-steps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.step {
+    padding: 8px 0;
+    color: #5f6368;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.step.active {
+    opacity: 1;
+    color: #1a73e8;
+}
+
+.step.completed {
+    opacity: 1;
+    color: #137333;
+}
+
+.results-section {
+    width: 100%;
+    max-width: 700px;
+}
+
+.briefing-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.briefing-header h2 {
+    color: #202124;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.briefing-meta {
+    color: #5f6368;
+    font-size: 0.9rem;
+}
+
+.news-articles {
+    margin-bottom: 30px;
+}
+
+.news-article {
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: box-shadow 0.2s ease;
+}
+
+.news-article:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    color: #1a73e8;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.article-title:hover {
+    text-decoration: underline;
+}
+
+.article-summary {
+    color: #5f6368;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #9aa0a6;
+}
+
+.linkedin-post-section {
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.linkedin-post-section h3 {
+    color: #202124;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+.post-container {
+    position: relative;
+}
+
+.linkedin-textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.linkedin-textarea:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.copy-btn, .regenerate-btn {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-btn:hover, .regenerate-btn:hover {
+    background: #1557b0;
+}
+
+.regenerate-btn {
+    background: #34a853;
+}
+
+.regenerate-btn:hover {
+    background: #2d8f47;
+}
+
+.copy-btn.copied {
+    background: #137333;
+}
+
+.char-count {
+    color: #5f6368;
+    font-size: 0.8rem;
+}
+
+.error-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.error-content {
+    background: white;
+    border: 1px solid #fce8e6;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.error-content h3 {
+    color: #d93025;
+    margin-bottom: 12px;
+}
+
+.error-content p {
+    color: #5f6368;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.retry-btn {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.retry-btn:hover {
+    background: #1557b0;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        padding: 16px;
+    }
+    
+    .main-content {
+        padding: 20px 16px;
+    }
+    
+    .logo {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+    
+    .post-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .copy-btn, .regenerate-btn {
+        width: 100%;
+    }
+}
