@@ -1,5 +1,9 @@
 # AI Good News Aggregator
 
+[![Demo Video](https://img.shields.io/badge/▶️-Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://github.com/user/repo/assets/demo-video.mp4)
+
+> **🎥 See it in action!** Watch the complete demo showing AI news discovery, Gemini analysis, and LinkedIn post generation in under 2 minutes.
+
 A powerful AI-driven web application that discovers positive AI developments and generates optimized LinkedIn posts using Google's Gemini 2.0 Flash model.
 
 ## 🌟 Features
