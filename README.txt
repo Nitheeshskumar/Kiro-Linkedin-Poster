@@ -1,8 +1,18 @@
 AI GOOD NEWS AGGREGATOR
 ========================
 
-DEMO VIDEO: Watch the complete demo at https://github.com/user/repo/assets/demo-video.mp4
-See AI news discovery, Gemini analysis, and LinkedIn post generation in under 2 minutes!
+DEMO VIDEO: assets/ai-news-aggregator-demo.mp4
+Watch the complete demo showing AI news discovery, Gemini analysis, and LinkedIn 
+post generation in action!
+
+What the demo shows:
+- Real-time news discovery from multiple sources
+- Gemini 2.0 Flash analyzing content for positive developments  
+- AI-generated LinkedIn posts with optimized hashtags
+- One-click copy functionality for immediate use
+- Complete workflow in under 20 seconds
+
+To view: Download the video file or run the app locally with "npm start"
 
 A powerful AI-driven web application that discovers positive AI developments 
 and generates optimized LinkedIn posts using Google's Gemini 2.0 Flash model.
